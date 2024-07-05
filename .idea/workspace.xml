@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.03">
+    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.13">
       <change beforePath="$PROJECT_DIR$/../20240704MovieCrawler" beforeDir="false" afterPath="$PROJECT_DIR$/../20240704MovieCrawler" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20240705WebCrawlerPractice" beforeDir="false" afterPath="$PROJECT_DIR$/../20240705WebCrawlerPractice" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" afterDir="false" />
     </list>
@@ -97,7 +98,7 @@
       <updated>1720101509617</updated>
       <workItem from="1720101510735" duration="6829000" />
       <workItem from="1720159602712" duration="2288000" />
-      <workItem from="1720184084361" duration="4542000" />
+      <workItem from="1720184084361" duration="6332000" />
     </task>
     <task id="LOCAL-00001" summary="v1.01">
       <option name="closed" value="true" />
@@ -107,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720101998838</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v1.13">
+      <option name="closed" value="true" />
+      <created>1720189078241</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720189078242</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +126,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="v1.01" />
     <MESSAGE value="v1.03" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.03" />
+    <MESSAGE value="v1.13" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.13" />
   </component>
 </project>

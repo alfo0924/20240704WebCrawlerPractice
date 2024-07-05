@@ -90,7 +90,7 @@ public class Main {
        System.out.println(title2);
        try{
 
-       List<WebElement> elements2=driver2.findElements(By.cssSelector(".year-single"));
+       List<WebElement> elements2=driver2.findElements(By.cssSelector(" .year-single"));
 
        for(WebElement element : elements2)
        {
