@@ -88,6 +88,7 @@ public class Main {
 
 
 
+
                dates.add(new FromEarliestToTheLatest(nameElement.getText(),MovieTimedates));
 
                System.out.print(nameElement.getText()+"\t");
