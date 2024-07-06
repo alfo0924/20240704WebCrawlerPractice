@@ -53,6 +53,9 @@ public class Main {
 
 
 
+
+
+
                System.out.print(nameElement.getText()+"\t");
                System.out.print(engNameElement.getText()+"\t");
                System.out.print(timeNameElement.getText()+"\t");
@@ -82,16 +85,25 @@ public class Main {
 
        WebDriver driver2=new ChromeDriver();
        driver2.get("https://autos.yahoo.com.tw/new-cars/make/audi");
+
        String title2=driver2.getTitle();
        System.out.println(title2);
+        for(int i=0 ; i<1500;i++)
+        {
+            ((JavascriptExecutor) driver2).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        }
+
         try{
 
        List<WebElement> elements2=driver2.findElements(By.cssSelector(" .year-single"));
 
        for(WebElement element : elements2)
        {
+
         WebElement nameElement=element.findElement(By.cssSelector("span.title"));
         WebElement priceElement=element.findElement(By.cssSelector("span.price"));
+
+
         System.out.print(nameElement.getText()+"\t");
         System.out.print("車價 :\t"+priceElement.getText()+"\t萬\n");
        }
@@ -104,13 +116,10 @@ public class Main {
        }
        finally
        {
+
            driver2.quit();
        }
 
-
-
-//99
-//88
 
 
     }
