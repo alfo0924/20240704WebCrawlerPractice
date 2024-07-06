@@ -3,6 +3,7 @@ package fcu.web;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 import org.openqa.selenium.By;
@@ -11,10 +12,36 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.awt.color.ICC_ColorSpace;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
+
+class FromEarliestToTheLatest
+{
+    private String title;
+    private DateTime date;
+    public FromEarliestToTheLatest(String title,DateTime date)
+    {
+        this.title=title;
+        this.date=date;
+    }
+
+    public String getTitle()
+    {
+        return title;
+    }
+    public String getDate()
+    {
+        return date;
+    }
+
+
+}
+
 
 public class Main {
     public static void main(String[] args) {
@@ -24,8 +51,10 @@ public class Main {
 
        driver.get("https://www.vscinemas.com.tw/vsweb/film/index.aspx");
        String title=driver.getTitle();
-       System.out.println(title);
+       System.out.println(title); //print out webPageTitle
 
+        List<LocalDate>dates=new ArrayList<>();
+        //Create arrayList to input date into ArrayList in order to compare from the earliest to the latest
        try(
                FileWriter writer=new FileWriter("Movie.csv");
        CSVPrinter printer=new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader("電影名稱","英文名稱","上映日期","下映日期")))
@@ -53,9 +82,8 @@ public class Main {
 
 
 
-
-
-
+               dates.add(new FromEarliestToTheLatest(nameElement.getText(),MovieTimeAdd40days));
+1
                System.out.print(nameElement.getText()+"\t");
                System.out.print(engNameElement.getText()+"\t");
                System.out.print(timeNameElement.getText()+"\t");
@@ -67,6 +95,14 @@ public class Main {
                //put into movie.csv
 
 
+           }
+
+
+           System.out.println("From earliest to the latest :");
+           Collections.sort(dates);
+           for( LocalDate date :dates)
+           {
+               System.out.println(date);
            }
 
        }
@@ -91,6 +127,7 @@ public class Main {
         for(int i=0 ; i<1500;i++)
         {
             ((JavascriptExecutor) driver2).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+            //in order to automatically scroll down the page and load the data
         }
 
         try{
