@@ -101,8 +101,6 @@ public class Main {
                //put into movie.csv
 
 
-
-
            }
 
 
@@ -119,10 +117,6 @@ public class Main {
            e.printStackTrace();
        }
        catch(IOException e)
-       {
-           e.printStackTrace();
-       }
-       catch(InterruptedException e)
        {
            e.printStackTrace();
        }
