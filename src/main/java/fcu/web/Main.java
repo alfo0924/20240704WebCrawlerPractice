@@ -15,15 +15,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.awt.color.ICC_ColorSpace;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 class FromEarliestToTheLatest
 {
     private String title;
     private DateTime date;
+
     public FromEarliestToTheLatest(String title,DateTime date)
     {
         this.title=title;
@@ -34,9 +32,15 @@ class FromEarliestToTheLatest
     {
         return title;
     }
-    public String getDate()
+    public DateTime getDate()
     {
         return date;
+    }
+    @Override
+    public String toString()
+    {
+        DateTimeFormatter formatter=DateTimeFormat.forPattern("yyyy-MM-dd");
+        return title+"-"+formatter.print(date);
     }
 
 
@@ -53,9 +57,11 @@ public class Main {
        String title=driver.getTitle();
        System.out.println(title); //print out webPageTitle
 
-        List<LocalDate>dates=new ArrayList<>();
+        List<FromEarliestToTheLatest>dates=new ArrayList<>();
         //Create arrayList to input date into ArrayList in order to compare from the earliest to the latest
+
        try(
+
                FileWriter writer=new FileWriter("Movie.csv");
        CSVPrinter printer=new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader("電影名稱","英文名稱","上映日期","下映日期")))
        {
@@ -73,17 +79,17 @@ public class Main {
             DateTimeFormatter format= DateTimeFormat.forPattern("yyyy-MM-dd");
             DateTime day40=now.plusDays(40);
 
-            String MovieTimeAfter40days =timeNameElement.getText();
-               DateTime MovieTimeAdd40days=format.parseDateTime(MovieTimeAfter40days);
+            String MovieTime =timeNameElement.getText();
+               DateTime MovieTimedates=format.parseDateTime(MovieTime);
 
-            day40=MovieTimeAdd40days.plusDays(40);
+            day40=MovieTimedates.plusDays(40);
 
             String MovieTimeAft40days=format.print(day40);
 
 
 
-               dates.add(new FromEarliestToTheLatest(nameElement.getText(),MovieTimeAdd40days));
-1
+               dates.add(new FromEarliestToTheLatest(nameElement.getText(),MovieTimedates));
+
                System.out.print(nameElement.getText()+"\t");
                System.out.print(engNameElement.getText()+"\t");
                System.out.print(timeNameElement.getText()+"\t");
@@ -94,13 +100,12 @@ public class Main {
                printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimeAft40days);
                //put into movie.csv
 
-
            }
 
 
-           System.out.println("From earliest to the latest :");
-           Collections.sort(dates);
-           for( LocalDate date :dates)
+           System.out.println("\nFrom earliest to the latest :\n");
+           Collections.sort(dates,Comparator.comparing(FromEarliestToTheLatest::getDate));
+           for( FromEarliestToTheLatest date :dates)
            {
                System.out.println(date);
            }
@@ -114,11 +119,15 @@ public class Main {
        {
            e.printStackTrace();
        }
+       catch(InterruptedException e)
+       {
+           e.printStackTrace();
+       }
        finally
        {
            driver.quit();
        }
-
+        System.out.println("\n\n");
        WebDriver driver2=new ChromeDriver();
        driver2.get("https://autos.yahoo.com.tw/new-cars/make/audi");
 

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.45 commit n push">
+    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.453 commit n push">
       <change beforePath="$PROJECT_DIR$/../20240704MovieCrawler" beforeDir="false" afterPath="$PROJECT_DIR$/../20240704MovieCrawler" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Movie.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +99,7 @@
       <workItem from="1720101510735" duration="6829000" />
       <workItem from="1720159602712" duration="2288000" />
       <workItem from="1720184084361" duration="9055000" />
-      <workItem from="1720252731482" duration="9073000" />
+      <workItem from="1720252731482" duration="16795000" />
     </task>
     <task id="LOCAL-00001" summary="v1.01">
       <option name="closed" value="true" />
@@ -138,6 +139,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="v1.01" />
@@ -146,6 +158,7 @@
     <MESSAGE value="v1.23" />
     <MESSAGE value="v1.35" />
     <MESSAGE value="v1.45 commit n push" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.45 commit n push" />
+    <MESSAGE value="v1.453 commit n push" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.453 commit n push" />
   </component>
 </project>
