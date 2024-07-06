@@ -88,7 +88,6 @@ public class Main {
 
 
 
-
                dates.add(new FromEarliestToTheLatest(nameElement.getText(),MovieTimedates));
 
                System.out.print(nameElement.getText()+"\t");
@@ -100,6 +99,9 @@ public class Main {
 
                printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimeAft40days);
                //put into movie.csv
+
+
+
 
            }
 
