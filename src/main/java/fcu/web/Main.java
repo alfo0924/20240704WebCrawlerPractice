@@ -6,6 +6,7 @@ import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,12 +21,14 @@ public class Main {
 
 
        WebDriver driver =new ChromeDriver();
+
        driver.get("https://www.vscinemas.com.tw/vsweb/film/index.aspx");
        String title=driver.getTitle();
        System.out.println(title);
 
-       try(FileWriter writer=new FileWriter("Movie.csv");
-       CSVPrinter printer=new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader("電影名稱","英文名稱","上映日期")))
+       try(
+               FileWriter writer=new FileWriter("Movie.csv");
+       CSVPrinter printer=new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader("電影名稱","英文名稱","上映日期","下映日期")))
        {
            List<WebElement> elements =driver.findElements(By.cssSelector(".infoArea"));
 
@@ -50,10 +53,6 @@ public class Main {
 
 
 
-
-
-
-
                System.out.print(nameElement.getText()+"\t");
                System.out.print(engNameElement.getText()+"\t");
                System.out.print(timeNameElement.getText()+"\t");
@@ -61,10 +60,7 @@ public class Main {
 
 
 
-
-
-
-               printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText());
+               printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimeAft40days);
                //put into movie.csv
 
 
@@ -88,7 +84,7 @@ public class Main {
        driver2.get("https://autos.yahoo.com.tw/new-cars/make/audi");
        String title2=driver2.getTitle();
        System.out.println(title2);
-       try{
+        try{
 
        List<WebElement> elements2=driver2.findElements(By.cssSelector(" .year-single"));
 
@@ -98,7 +94,6 @@ public class Main {
         WebElement priceElement=element.findElement(By.cssSelector("span.price"));
         System.out.print(nameElement.getText()+"\t");
         System.out.print("車價 :\t"+priceElement.getText()+"\t萬\n");
-
        }
 
 
@@ -116,6 +111,7 @@ public class Main {
 
 //99
 //88
+
 
     }
 }

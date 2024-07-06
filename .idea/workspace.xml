@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.13">
+    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.23">
       <change beforePath="$PROJECT_DIR$/../20240704MovieCrawler" beforeDir="false" afterPath="$PROJECT_DIR$/../20240704MovieCrawler" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../20240705WebCrawlerPractice" beforeDir="false" afterPath="$PROJECT_DIR$/../20240705WebCrawlerPractice" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -98,7 +98,8 @@
       <updated>1720101509617</updated>
       <workItem from="1720101510735" duration="6829000" />
       <workItem from="1720159602712" duration="2288000" />
-      <workItem from="1720184084361" duration="6332000" />
+      <workItem from="1720184084361" duration="9055000" />
+      <workItem from="1720252731482" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="v1.01">
       <option name="closed" value="true" />
@@ -116,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720189078242</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="v1.23">
+      <option name="closed" value="true" />
+      <created>1720191620355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720191620355</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +136,7 @@
     <MESSAGE value="v1.01" />
     <MESSAGE value="v1.03" />
     <MESSAGE value="v1.13" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.13" />
+    <MESSAGE value="v1.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.23" />
   </component>
 </project>
