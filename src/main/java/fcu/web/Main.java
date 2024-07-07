@@ -48,23 +48,20 @@ class FromEarliestToTheLatest
 
 
 public class Main {
+
     public static void main(String[] args) {
-
-
        WebDriver driver =new ChromeDriver();
-
        driver.get("https://www.vscinemas.com.tw/vsweb/film/index.aspx");
        String title=driver.getTitle();
        System.out.println(title); //print out webPageTitle
-
         List<FromEarliestToTheLatest>dates=new ArrayList<>();
         //Create arrayList to input date into ArrayList in order to compare from the earliest to the latest
-
        try(
-
-               FileWriter writer=new FileWriter("Movie.csv");
+       FileWriter writer=new FileWriter("Movie.csv");
        CSVPrinter printer=new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader("電影名稱","英文名稱","上映日期","下映日期")))
        {
+
+           //               printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimeAft40days);
            List<WebElement> elements =driver.findElements(By.cssSelector(".infoArea"));
 
            for(WebElement element : elements)
@@ -75,18 +72,13 @@ public class Main {
 
 
             DateTime now=new DateTime();
-
             DateTimeFormatter format= DateTimeFormat.forPattern("yyyy-MM-dd");
             DateTime day40=now.plusDays(40);
-
             String MovieTime =timeNameElement.getText();
                DateTime MovieTimedates=format.parseDateTime(MovieTime);
 
             day40=MovieTimedates.plusDays(40);
-
             String MovieTimeAft40days=format.print(day40);
-
-
 
                dates.add(new FromEarliestToTheLatest(nameElement.getText(),MovieTimedates));
 
@@ -95,9 +87,6 @@ public class Main {
                System.out.print(timeNameElement.getText()+"\t");
                System.out.print("Add 40 days :\t" + MovieTimeAft40days+"\n");
 
-
-
-               printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimeAft40days);
                //put into movie.csv
 
 
@@ -112,6 +101,7 @@ public class Main {
            }
 
        }
+
        catch (NoSuchElementException e)
        {
            e.printStackTrace();
@@ -124,6 +114,7 @@ public class Main {
        {
            driver.quit();
        }
+
         System.out.println("\n\n");
        WebDriver driver2=new ChromeDriver();
        driver2.get("https://autos.yahoo.com.tw/new-cars/make/audi");
