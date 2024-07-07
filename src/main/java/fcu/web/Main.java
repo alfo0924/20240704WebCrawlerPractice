@@ -80,45 +80,18 @@ public class Main {
 
                 dates.add(new FromEarliestToTheLatest(nameElement.getText(), MovieTimedates));
 
-
                 //add 2nd page
                 driver.findElements(By.cssSelector(".pagebar a")).get(2).click();
-                List<WebElement> elements12 = driver.findElements(By.cssSelector(".infoArea"));
 
 
-                for (WebElement element12 : elements12) {
-                    WebElement nameElement12 = element12.findElement(By.cssSelector("a"));
-                    WebElement engNameElement12 = element12.findElement(By.cssSelector("h3"));
-                    WebElement timeNameElement12 = element12.findElement(By.cssSelector("time"));
 
-                    DateTime day4012 = now.plusDays(40);
-                    String MovieTime12 = timeNameElement12.getText();
-                    DateTime MovieTimedates12 = format.parseDateTime(MovieTime12);
-
-                    day40 = MovieTimedates12.plusDays(40);
-                    String MovieTimeAft40days12 = format.print(day4012);
-
-
-                    dates.add(new FromEarliestToTheLatest(nameElement.getText(), MovieTimedates12));
 
                     System.out.print(nameElement.getText() + "\t");
                     System.out.print(engNameElement.getText() + "\t");
                     System.out.print(timeNameElement.getText() + "\t");
-                    System.out.print(nameElement12.getText() + "\t");
-                    System.out.print(engNameElement12.getText() + "\t");
-                    System.out.print(timeNameElement12.getText() + "\t");
                     System.out.print("Add 40 days :\t" + MovieTimeAft40days);
-                    System.out.print(MovieTimeAft40days12 + "\n");
-
-                    String P1plusP2 = nameElement.getText() + nameElement12.getText();
-                    String P1TplusP2T = timeNameElement.getText() + timeNameElement12.getText();
-                    String P1ENplusP2EN = engNameElement.getText() + engNameElement12.getText();
-                    String P1af40DplusP2af40D = MovieTimeAft40days + MovieTimeAft40days12;
-
-                    printer.printRecord(P1plusP2, P1TplusP2T, P1ENplusP2EN, P1af40DplusP2af40D);
+                    printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimedates);
                     //put into movie.csv
-
-
                 }
 
 
@@ -130,7 +103,7 @@ public class Main {
 
 
             }
-        }
+
    catch(NoSuchElementException e)
             {
                 e.printStackTrace();
@@ -177,4 +150,5 @@ public class Main {
 
 
     }
+
 }
