@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.51 commit n push">
+    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.55 commit n push">
       <change beforePath="$PROJECT_DIR$/../20240704MovieCrawler" beforeDir="false" afterPath="$PROJECT_DIR$/../20240704MovieCrawler" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movie.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Movie.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +100,7 @@
       <workItem from="1720184084361" duration="9055000" />
       <workItem from="1720252731482" duration="18947000" />
       <workItem from="1720334767764" duration="3499000" />
-      <workItem from="1720356486504" duration="1670000" />
+      <workItem from="1720356486504" duration="5103000" />
     </task>
     <task id="LOCAL-00001" summary="v1.01">
       <option name="closed" value="true" />
@@ -159,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720277258728</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v1.55 commit n push">
+      <option name="closed" value="true" />
+      <created>1720359294147</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720359294147</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +193,7 @@
     <MESSAGE value="v1.45 commit n push" />
     <MESSAGE value="v1.453 commit n push" />
     <MESSAGE value="v1.51 commit n push" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.51 commit n push" />
+    <MESSAGE value="v1.55 commit n push" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.55 commit n push" />
   </component>
 </project>
