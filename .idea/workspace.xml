@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.54541 commit n push">
-      <change beforePath="$PROJECT_DIR$/../20240704MovieCrawler" beforeDir="false" afterPath="$PROJECT_DIR$/../20240704MovieCrawler" afterDir="false" />
+    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.545412 commit n push">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Movie.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,25 +28,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.20270704WebCrawlerPractice [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.20270704WebCrawlerPractice [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Maven.20270704WebCrawlerPractice [clean].executor": "Run",
+    "Maven.20270704WebCrawlerPractice [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/20270704WebCrawlerPractice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
@@ -99,7 +101,8 @@
       <workItem from="1720184084361" duration="9055000" />
       <workItem from="1720252731482" duration="18947000" />
       <workItem from="1720334767764" duration="3499000" />
-      <workItem from="1720356486504" duration="6704000" />
+      <workItem from="1720356486504" duration="7718000" />
+      <workItem from="1720451039255" duration="1079000" />
     </task>
     <task id="LOCAL-00001" summary="v1.01">
       <option name="closed" value="true" />
@@ -181,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720362453293</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="v1.545412 commit n push">
+      <option name="closed" value="true" />
+      <created>1720363628656</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720363628656</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +222,7 @@
     <MESSAGE value="v1.55 commit n push" />
     <MESSAGE value="v1.5454 commit n push" />
     <MESSAGE value="v1.54541 commit n push" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.54541 commit n push" />
+    <MESSAGE value="v1.545412 commit n push" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.545412 commit n push" />
   </component>
 </project>

@@ -79,41 +79,18 @@ for (WebElement element : elements) {
 
     dates.add(new FromEarliestToTheLatest(nameElement.getText(), MovieTimedates));
 
-    Thread.sleep(15000);
-    //add 2nd page
-    driver.findElements(By.cssSelector(".pagebar a")).get(2).click();
+//    day40 = MovieTimedates12.plusDays(40);
+//    String MovieTimeAft40days12 = format.print(day40);
 
-    WebElement nameElement12 = element.findElement(By.cssSelector("a"));
-    WebElement engNameElement12 = element.findElement(By.cssSelector("h3"));
-    WebElement timeNameElement12 = element.findElement(By.cssSelector("time"));
 
-    String MovieTime12 = timeNameElement12.getText();
-    DateTime MovieTimedates12 = format.parseDateTime(MovieTime12);
-
-    day40 = MovieTimedates12.plusDays(40);
-    String MovieTimeAft40days12 = format.print(day40);
-
-    dates.add(new FromEarliestToTheLatest(nameElement12.getText(), MovieTimedates12));
-
-    Thread.sleep(15000);
 
     System.out.print(nameElement.getText() + "\t");
     System.out.print(engNameElement.getText() + "\t");
     System.out.print(timeNameElement.getText() + "\t");
-    System.out.print(nameElement12.getText()+"\t");
-    System.out.print(engNameElement12.getText()+"\t");
-    System.out.print(timeNameElement12.getText()+"\t");
 
-    System.out.print("Add 40 days :\t" + MovieTimeAft40days);
-    System.out.print(MovieTimeAft40days12);
 
-    String P1TitlePlusP2Title=nameElement.getText()+nameElement12.getText();
-    String P1engPlusP2eng=engNameElement.getText()+engNameElement12.getText();
-    String P1TimePlusP2Time=timeNameElement.getText()+timeNameElement12.getText();
-    String P1Aft40DaysplusP2Aft40Days=MovieTimeAft40days+MovieTimeAft40days12;
-//
-//    printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimedates);
-    printer.printRecord(P1TitlePlusP2Title,P1engPlusP2eng,P1TimePlusP2Time,P1Aft40DaysplusP2Aft40Days);
+    printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimedates);
+//    printer.printRecord(P1TitlePlusP2Title,P1engPlusP2eng,P1TimePlusP2Time,P1Aft40DaysplusP2Aft40Days);
 
     //put into movie.csv
         }
@@ -135,10 +112,7 @@ catch(IOException e)
 {
     e.printStackTrace();
 }
-catch(InterruptedException e)
-{
-    e.printStackTrace();
-}
+
    finally
     {
         driver.quit();
