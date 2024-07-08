@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.545412 commit n push">
+    <list default="true" id="9c079205-0ed0-4bdb-bc8c-68493d5f801b" name="Changes" comment="v1.545433 commit n push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movie.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Movie.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fcu/web/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +100,7 @@
       <workItem from="1720252731482" duration="18947000" />
       <workItem from="1720334767764" duration="3499000" />
       <workItem from="1720356486504" duration="7718000" />
-      <workItem from="1720451039255" duration="1079000" />
+      <workItem from="1720451039255" duration="1709000" />
     </task>
     <task id="LOCAL-00001" summary="v1.01">
       <option name="closed" value="true" />
@@ -192,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720363628656</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="v1.545433 commit n push">
+      <option name="closed" value="true" />
+      <created>1720452556985</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720452556985</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +229,7 @@
     <MESSAGE value="v1.5454 commit n push" />
     <MESSAGE value="v1.54541 commit n push" />
     <MESSAGE value="v1.545412 commit n push" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.545412 commit n push" />
+    <MESSAGE value="v1.545433 commit n push" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.545433 commit n push" />
   </component>
 </project>
