@@ -83,10 +83,10 @@ for (WebElement element : elements) {
 //    String MovieTimeAft40days12 = format.print(day40);
 
 
-
+//    System.out.print("test111");
     System.out.print(nameElement.getText() + "\t");
     System.out.print(engNameElement.getText() + "\t");
-    System.out.print(timeNameElement.getText() + "\t");
+    System.out.print(timeNameElement.getText() + "\t\n");
 
 
     printer.printRecord(nameElement.getText(),engNameElement.getText(),timeNameElement.getText(),MovieTimedates);
